@@ -37,7 +37,7 @@ class CountryChannels extends ConsumerWidget {
       child: Scaffold(
           body: Column(
         children: [
-           MainAppbar(widget: Text("salam")),
+           MainAppbar(widget: Text(country,style: TextStyle(color: Colors.white70),)),
           channels.when(
             data: (data) => Expanded(
               child: Container(
@@ -50,7 +50,8 @@ class CountryChannels extends ConsumerWidget {
               )),
             ),
             error: (error, stackTrace) => Text(error.toString()),
-            loading: () => const CircularProgressIndicator(),
+            loading: () =>  SizedBox(
+                width: 50, child: Lottie.asset(kLoading, width: 60)),
           ),
         ],
       )),
