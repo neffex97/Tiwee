@@ -2,8 +2,8 @@
 
 An IPTV player developed for android/ios devices with flutter
 
-you can watch cahnnel's from hole the world
-you can access channel via selecting your desire country or by category type
+you can watch cahnnel's from all over  the world
+you can access channel by selecting your desire country or by category type
 
 UI inspired from : https://dribbble.com/shots/14754204-IPTVify-App-Ui-Design
 
