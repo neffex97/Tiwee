@@ -7,6 +7,11 @@ you can access channel by selecting your desired country or by category type
 
 UI inspired from : <a href="https://dribbble.com/shots/14754204-IPTVify-App-Ui-Design">Mohammad Reza Farahzad</a>
 
+Vidoe demo =>
+
+
+https://user-images.githubusercontent.com/32876834/186905539-c42aa844-6f2d-4c78-9b3c-704de6e7582d.mp4
+
 
 Want to contribute? I would really appreciate a hand with the development to add more features in this app. Feel free to Fork, edit, then pull!
 ![Screenshot_2022-02-10-09-40-26-292_com example Tiwee](https://user-images.githubusercontent.com/32876834/153373110-119ef7bd-1bda-4aae-afaf-1f435d6f386b.jpg)
