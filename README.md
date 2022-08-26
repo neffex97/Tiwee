@@ -10,7 +10,10 @@ UI inspired from : <a href="https://dribbble.com/shots/14754204-IPTVify-App-Ui-D
 Vidoe demo =>
 
 
-https://user-images.githubusercontent.com/32876834/186905539-c42aa844-6f2d-4c78-9b3c-704de6e7582d.mp4
+
+https://user-images.githubusercontent.com/32876834/186907325-03c3055b-5691-4af2-a8b7-f77dae5c699c.mp4
+
+
 
 
 Want to contribute? I would really appreciate a hand with the development to add more features in this app. Feel free to Fork, edit, then pull!
