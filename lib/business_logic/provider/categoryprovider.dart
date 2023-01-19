@@ -216,8 +216,7 @@ final categoryProvider =
 
       return AsyncValue.data(sortedByCategory);
     },
-    error: (error, stackTrace) =>
-        AsyncValue.error(error, stackTrace: stackTrace),
+    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
     loading: AsyncValue.loading,
   );
 });

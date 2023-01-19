@@ -28,18 +28,18 @@ final countryProvider =
             // print(element);
             // print(element.name);
             if (element.name != "") {
-
               // sortedByCountry[element.name]!.add(channel);
-              sortedByCountry[element.name]=[...?sortedByCountry[element.name],channel];
-
+              sortedByCountry[element.name] = [
+                ...?sortedByCountry[element.name],
+                channel
+              ];
             }
           }
         }
       }
       return AsyncValue.data(sortedByCountry);
     },
-    error: (error, stackTrace) =>
-        AsyncValue.error(error, stackTrace: stackTrace),
+    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
     loading: AsyncValue.loading,
   );
 });
