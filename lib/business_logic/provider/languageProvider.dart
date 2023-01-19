@@ -17,15 +17,13 @@ final languageProvider =
               ? print("language added before")
               : sortedByLanguage[channelObj.languages[0].name] = [];
           sortedByLanguage[channelObj.languages[0].name]?.add(channelObj);
-
         }
       }
       print("sisi");
       print(sortedByLanguage);
       return AsyncValue.data(sortedByLanguage);
     },
-    error: (error, stackTrace) =>
-        AsyncValue.error(error, stackTrace: stackTrace),
+    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
     loading: AsyncValue.loading,
   );
 });
