@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -66,48 +67,52 @@ class Menu extends ConsumerWidget {
                 ),
                 Expanded(
                   child: categories.when(
-                    data: (data) => AnimationLimiter(
-                        child: ListView.builder(
-                      physics: const BouncingScrollPhysics(),
-                      scrollDirection: Axis.horizontal,
-                      shrinkWrap: false,
-                      itemCount: channelCard.state.length,
-                      itemBuilder: (context, index) =>
-                          AnimationConfiguration.staggeredList(
-                              position: index,
-                              duration: const Duration(milliseconds: 900),
-                              child: SlideAnimation(
-                                child: FadeInAnimation(
-                                  child: Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10.0),
-                                      child: GestureDetector(
-                                        onTap: () => Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => index == 0
-                                                  ? SortedByCountryPage(allChanellsCount:channelCard
-                                                  .state[index].channelCount ,)
-                                                  : SortedByCategoryPage(
-                                                      categoryName: channelCard
-                                                          .state[index].name,
-                                                      channels: data[channelCard
-                                                          .state[index].name]??[],
-                                                    ),
-                                            )),
-                                        child: BigCardChannels(
-                                          index: index,
-                                          size: size,
-                                          channelsCount: channelCard
-                                              .state[index].channelCount,
-                                          icon: channelCard
-                                              .state[index].iconAddress,
-                                          text: channelCard.state[index].name,
-                                        ),
+                    data: (data) =>
+                        OrientationBuilder(builder: (context, orientation) {
+                      return GridView.count(
+                        crossAxisCount:
+                            orientation == Orientation.landscape ? 1 : 2,
+                        physics: const BouncingScrollPhysics(),
+                        scrollDirection: orientation == Orientation.landscape
+                            ? Axis.horizontal
+                            : Axis.vertical,
+                        shrinkWrap: false,
+                        children: List.generate(
+                          channelCard.state.length,
+                          (index) => FadeInUp(
+                            child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10.0, vertical: 10),
+                                child: GestureDetector(
+                                  onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => index == 0
+                                            ? SortedByCountryPage(
+                                                allChanellsCount: channelCard
+                                                    .state[index].channelCount,
+                                              )
+                                            : SortedByCategoryPage(
+                                                categoryName: channelCard
+                                                    .state[index].name,
+                                                channels: data[channelCard
+                                                        .state[index].name] ??
+                                                    [],
+                                              ),
                                       )),
-                                ),
-                              )),
-                    )),
+                                  child: BigCardChannels(
+                                    index: index,
+                                    size: size,
+                                    channelsCount:
+                                        channelCard.state[index].channelCount,
+                                    icon: channelCard.state[index].iconAddress,
+                                    text: channelCard.state[index].name,
+                                  ),
+                                )),
+                          ),
+                        ),
+                      );
+                    }),
                     error: (error, stackTrace) => Center(
                       child: Text(error.toString()),
                     ),
