@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:intl/intl.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:Tiwee/core/consts.dart';
 import 'package:Tiwee/presentation/screens/home/home_page.dart';
-import 'package:unicons/unicons.dart';
 
 final forwardProvider = StateProvider<bool>((ref) {
   return true;

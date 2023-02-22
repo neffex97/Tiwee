@@ -1,14 +1,11 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:Tiwee/business_logic/provider/categoryprovider.dart';
 import 'package:Tiwee/business_logic/provider/channelCardprovider.dart';
 import 'package:Tiwee/core/consts.dart';
-import 'package:Tiwee/presentation/screens/home/home_page.dart';
 
 import 'package:Tiwee/presentation/screens/home/sorted_by_category_page.dart';
 import 'package:Tiwee/presentation/screens/home/sorted_by_countryPage.dart';

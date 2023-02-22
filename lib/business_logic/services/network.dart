@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:Tiwee/business_logic/model/category.dart';
 import 'package:Tiwee/business_logic/model/channel.dart';
 
 Future<List<ChannelObj>?> fetchChannels() async {
@@ -29,4 +28,5 @@ Future<List<ChannelObj>?> fetchChannels() async {
   } catch (e) {
     print(e);
   }
+  return null;
 }
