@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:Tiwee/business_logic/model/category.dart';
 import 'package:Tiwee/business_logic/model/channel.dart';
 
 Future<List<ChannelObj>?> fetchChannels() async {
@@ -7,7 +6,7 @@ Future<List<ChannelObj>?> fetchChannels() async {
 
   try {
     Response response =
-        await Dio().get('https://iptv-org.github.io/iptv/channels.json');
+        await Dio().get('https://iptv-org.github.io/api/channels.json');
     print("enzo");
     print(response.toString());
     for (var channel in response.data) {
@@ -29,4 +28,5 @@ Future<List<ChannelObj>?> fetchChannels() async {
   } catch (e) {
     print(e);
   }
+  return null;
 }

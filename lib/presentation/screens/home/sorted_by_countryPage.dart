@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:Tiwee/business_logic/provider/categoryprovider.dart';
 import 'package:Tiwee/business_logic/provider/country_code.dart';
 import 'package:Tiwee/business_logic/provider/country_provider.dart';

@@ -1,11 +1,7 @@
-import 'dart:developer';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lottie/lottie.dart';
-import 'package:Tiwee/business_logic/provider/country_code.dart';
 import 'package:Tiwee/business_logic/provider/country_provider.dart';
 import 'package:Tiwee/core/consts.dart';
 import 'package:Tiwee/presentation/screens/home/player.dart';

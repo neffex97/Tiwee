@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -7,7 +6,6 @@ import 'package:lottie/lottie.dart';
 import 'package:Tiwee/business_logic/model/channel.dart';
 import 'package:Tiwee/core/consts.dart';
 import 'package:Tiwee/presentation/screens/home/player.dart';
-import 'package:Tiwee/presentation/widgets/tv_card.dart';
 
 class SortedByCategoryPage extends StatefulWidget {
   const SortedByCategoryPage(

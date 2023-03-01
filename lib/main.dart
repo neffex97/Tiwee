@@ -9,10 +9,9 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Color(0xff1a1726)
   ));
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
 
-      .then((value) =>
+
+
       runApp(ProviderScope(
         child: MaterialApp(
           themeMode: ThemeMode.system,
@@ -26,7 +25,7 @@ void main() {
 
       ),
 
-      )));
+      ));
 }
 
 class MyApp extends StatelessWidget {

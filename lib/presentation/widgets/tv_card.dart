@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lottie/lottie.dart';
 import 'package:Tiwee/core/consts.dart';
-import 'package:Tiwee/presentation/screens/home/country_channels.dart';
 
 class TvCard extends StatelessWidget {
   const TvCard(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 const Color kBlackBg = Color(0xff1c1829);
 const Color kWhiteBg = Color(0xff262436);

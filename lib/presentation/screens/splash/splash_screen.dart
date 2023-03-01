@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:Tiwee/core/consts.dart';
-import 'package:Tiwee/presentation/screens/home/menu.dart';
 import 'package:lottie/lottie.dart';
 import 'package:Tiwee/presentation/screens/home/home_page.dart';
 

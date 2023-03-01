@@ -1,10 +1,7 @@
-import 'dart:developer';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:Tiwee/business_logic/model/channel.dart';
 import 'package:Tiwee/business_logic/provider/channelProvider.dart';
-import 'package:Tiwee/business_logic/provider/country_code.dart';
-import 'package:Tiwee/core/consts.dart';
 
 final countryProvider =
     Provider<AsyncValue<Map<String, List<ChannelObj>>>>((ref) {

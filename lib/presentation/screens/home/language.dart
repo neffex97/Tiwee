@@ -14,29 +14,34 @@ class Language extends ConsumerWidget {
     final double height = MediaQuery.of(context).size.height;
     final country = ref.watch(languageProvider);
     return Scaffold(
-      body: country.when(
-        data: (data) {
-          kLanguages.sort((a,b)=>a.toString().compareTo(b.toString()));
-          print(data);
-          return ListView.builder(
-
-            itemCount: data.length,
-            itemBuilder: (context, index) => GestureDetector(
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LanguageList(channels: data[kLanguages[index]]??[],),)),
-              child: ListTile(
-                title: Text(kLanguages[index]),
-              ),
+        body: country.when(
+      data: (data) {
+        kLanguages.sort((a, b) => a.toString().compareTo(b.toString()));
+        print(data);
+        return ListView.builder(
+          itemCount: data.length,
+          itemBuilder: (context, index) => GestureDetector(
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LanguageList(
+                    channels: data[kLanguages[index]] ?? [],
+                  ),
+                )),
+            child: ListTile(
+              title: Text(kLanguages[index]),
             ),
-          );
-        },
-        error: (error, stackTrace) => Text(error.toString()),
-        loading: () => Center(
-            child: SizedBox(
-                width: width / 3,
-                child: Lottie.asset(
-                  kLoading,
-                  width: 100,
-                ))),
-      ));
+          ),
+        );
+      },
+      error: (error, stackTrace) => Text(error.toString()),
+      loading: () => Center(
+          child: SizedBox(
+              width: width / 3,
+              child: Lottie.asset(
+                kLoading,
+                width: 100,
+              ))),
+    ));
   }
 }
