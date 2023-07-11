@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
-import 'package:Tiwee/business_logic/provider/categoryprovider.dart';
-import 'package:Tiwee/business_logic/provider/channelCardprovider.dart';
+import 'package:Tiwee/business_logic/provider/category_provider.dart';
+import 'package:Tiwee/business_logic/provider/channel_card_provider.dart';
 import 'package:Tiwee/core/consts.dart';
 
 import 'package:Tiwee/presentation/screens/home/sorted_by_category_page.dart';
