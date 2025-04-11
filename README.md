@@ -25,7 +25,7 @@ Design inspired by: [Mohammad Reza Farahzad](https://dribbble.com/shots/14754204
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tiwee.git
+   git clone https://github.com/neffex97/tiwee.git
    ```
 2. Navigate to the project directory:
    ```bash
